@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1a1a1a;
+    background-color: #e1e2e6;
+    font-size: 16px;
+}
+
+
+            /* Header */
+
+header img, header h2, nav, header ul, header li {
+    display: inline;
+}
+
+header, header img, header h2, nav, header ul, header li, header span, header a, .logo {
+    background-color: white;
+}
+
+header {
+    padding: 16px 24px 16px 24px;
+}
+
+header h2 {
+    font-size: 32px;
+}
+
+header span {
+    opacity: 0.6;
+    font-size: 32px;
+}
+
+header nav {
+    float: right;
+}
+
+header ul {
+    list-style: none;
+}
+
+header a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 500;
+    letter-spacing: 95%;
+    font-size: 20px;
+}
+
+header li {
+    margin-left: 16px;
+}
+
+
+            /* Banner */
+
+.banner {
+    display: flex;
+}
+
+.banner img {
+    max-width: 60%;
+    padding: 2rem 1.5rem 2rem 1.5rem
+}
+
+.banner div {
+    text-align: center;
+    padding: 9rem 1rem;
+}
+
+.banner button {
+    width: 400px;
+    padding: 0.5rem 0;
+    color: white;
+    background-color: #1a1a1a;
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+div p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin: 2rem 0;
+}
+
+            /* Pre Main */
+
+.practice {
+    display: flex;
+}
+
+.left-main {
+    /* background-color: white; */
+    max-width: 60%;
+}
+
+.motivation {
+    padding: 2rem 1.5rem;
+}
+
+.hardworker {
+    max-width: 95%;
+    padding: 2rem 1.5rem;
+}
+
+.right-main {
+    background-color: white;
+}
+
+.rectangle {
+    display: flex;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.info {
+    padding-left: 1rem;
+}
+
+.rec-img {
+    max-width: 35%;
+}
