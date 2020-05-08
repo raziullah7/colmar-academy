@@ -7,6 +7,14 @@
     font-size: 16px;
 }
 
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+}
 
             /* Header */
 
@@ -76,11 +84,11 @@ header li {
     font-size: 1.5rem;
 }
 
-h1 {
+.banner-heading {
     font-size: 40px;
 }
 
-div p {
+.banner-text {
     font-size: 1.5rem;
     line-height: 2.5rem;
     margin: 2rem 0;
@@ -90,36 +98,74 @@ div p {
 
 .practice {
     display: flex;
+    background-color: white;
 }
 
 .left-main {
-    /* background-color: white; */
+    background-color: white;
     max-width: 60%;
 }
 
 .motivation {
     padding: 2rem 1.5rem;
+    background-color: white;
+}
+
+.motivation h1, .motivation p {
+    background-color: white;
+    text-align: center;
+}
+
+.motivation p {
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 100;
+    padding-top: 1.5rem;
+}
+
+.home-of-motivation {
+    padding-bottom: 2rem;
 }
 
 .hardworker {
     max-width: 95%;
     padding: 2rem 1.5rem;
+    background-color: white;
 }
 
 .right-main {
     background-color: white;
+    padding-top: 1rem;
 }
 
 .rectangle {
     display: flex;
     margin: 1rem;
     padding: 1rem;
+    border: 0.1rem solid black;
 }
 
 .info {
     padding-left: 1rem;
+    padding-top: 1.5rem;
+}
+
+.info p {
+    padding: 0.5rem 0;
+}
+
+.info a {
+    text-decoration: none;
+    color: blue;
 }
 
 .rec-img {
     max-width: 35%;
 }
+
+.guest {
+    max-height: 10.5rem;
+}
+
+
+
