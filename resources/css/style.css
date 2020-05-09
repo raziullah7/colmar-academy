@@ -59,7 +59,6 @@ header li {
     margin-left: 16px;
 }
 
-
             /* Banner */
 
 .banner {
@@ -76,7 +75,7 @@ header li {
     padding: 9rem 1rem;
 }
 
-.banner button {
+button {
     width: 400px;
     padding: 0.5rem 0;
     color: white;
@@ -142,7 +141,6 @@ header li {
     display: flex;
     margin: 1rem;
     padding: 1rem;
-    border: 0.1rem solid black;
 }
 
 .info {
@@ -167,5 +165,139 @@ header li {
     max-height: 10.5rem;
 }
 
+            /* Boxes Section */
 
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 2rem;
+}
 
+section h1 {
+    padding: 2.5rem 0 1rem 0;
+}
+
+.box {
+    background-color: white;
+    max-width: 20rem;
+    text-align: center;
+    margin: 2rem;
+}
+
+.box-content {
+    padding: 1rem;
+    background-color: white;
+}
+
+.box h2, .box p {
+    background-color: white;
+}
+
+.box-content p {
+    padding-top: 0.5rem;
+}
+
+.box-img {
+    max-width: 20rem;
+    background-color: white;
+    text-align: center;
+}
+
+            /* Video Section */
+
+.pre-footer {
+    display: flex;
+    background-color: white;
+    border-bottom: 0.15rem solid #e1e2e6;
+}
+
+.section-heading {
+    padding: 2rem 0;
+    background-color: white;
+}
+
+.main-vid {
+    max-width: 60%;
+    text-align: center;
+}
+
+.vid {
+    max-width: 100%;
+    text-align: center;
+}
+
+.vid-content, .vid-content h2, .vid-content p {
+    background-color: white;
+}
+
+.vid-container {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    background-color: white;
+}
+
+.next-line {
+    border-bottom: 1rem solid white;
+    border-right: 1rem solid white;
+    padding: 1rem;
+}
+
+.next-up {
+    background-color: white;
+}
+
+.next-content {
+    display: flex;
+}
+
+.next-img {
+    max-height: 10rem;
+    padding-right: 1rem;
+}
+
+.next-text {
+    padding-top: 2rem;
+}
+
+.next-text p {
+    padding-top: 1rem;
+}
+
+.vid-content p {
+    padding: 0.5rem 1.5rem 2rem 1.5rem;
+    padding-bottom: 2rem;
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+.vid-content h2 {
+    text-align: left;
+    padding-left: 1em;
+}
+
+            /* Footer */
+
+footer {
+    
+    background-color: white;
+}
+
+.last-words {
+    display: inline;
+    text-decoration: none;
+    float: right;
+    padding-left: 0.7rem;
+    background-color: white;
+}
+
+footer p {
+    display: inline;
+    background-color: white;
+}
+
+footer div {
+    padding: 2rem;
+    background-color: white;
+}
