@@ -83,7 +83,7 @@ header .mobile {
 
     header {
         padding-bottom: 4rem;
-        width: 100%;
+        /* width: 100%; */
     }
 
     header .desktop {
@@ -96,12 +96,17 @@ header .mobile {
         text-align: center;
     }
 
+    header .mobile ul {
+        padding-right: 0.5rem;
+    }
+
     header .mobile ul li {
         padding: 1.2rem;
     }
 
     header .mobile ul li a img {
         min-width: 2.2rem;
+        margin: 0 1.5rem;
     }
 }
 
@@ -123,8 +128,8 @@ header .mobile {
 }
 
 button {
-    width: 400px;
-    padding: 0.5rem 0;
+    width: 350px;
+    padding: 0.8rem 0;
     color: white;
     background-color: #1a1a1a;
     font-size: 1.5rem;
