@@ -11,19 +11,29 @@
 <body>
 
     <header>
-        <img class="logo" src="./resources/images/ic-logo.svg" alt="the page logo">
-        <h2>COLMAR <span>ACADEMY</span></h2>
-        <nav>
+        <div class="desktop">
+            <img class="logo" src="./resources/images/ic-logo.svg" alt="the page logo">
+            <h2>COLMAR <span>ACADEMY</span></h2>
+            <nav>
+                <ul>
+                    <li><a href="#">On Campus</a></li>
+                    <li><a href="#">Online</a></li>
+                    <li><a href="#">Or Companies</a></li>
+                    <li><a href="#">Sign In</a></li>
+                </ul>
+            </nav>
+        </div>
+        <nav class="mobile">
             <ul>
-                <li><a href="#">On Campus</a></li>
-                <li><a href="#">Online</a></li>
-                <li><a href="#">Or Companies</a></li>
-                <li><a href="#">Sign In</a></li>
+                <li><a href="#"><img src="./resources/images/ic-logo.svg" alt="home button"></a></li>
+                <li><a href="#"><img src="./resources/images/ic-on-campus.svg" alt="campus button"></a></li>
+                <li><a href="#"><img src="./resources/images/ic-online.svg" alt="online button"></a></li>
+                <li><a href="#"><img src="./resources/images/ic-login.svg" alt="login button"></a></li>
             </ul>
         </nav>
     </header>
 
-    <section>
+    <section class="desktop">
         <div class="banner">
             <img src="./resources/images/banner.jpg" alt="doing group-study">
             <div>
@@ -32,6 +42,13 @@
                 <button type="button">Start Here</button>
             </div>
         </div>
+    </section>
+
+    <section class="mobile">
+        <img src="./resources/images/banner.jpg" alt="doing group-study">
+        <h1 class="banner-heading">Learn Something New Everyday</h1>
+        <p class="banner-text">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+        <button type="button">Start Here</button>
     </section>
 
     <main>
@@ -48,38 +65,69 @@
                 </div>
             </div>
 
-            <div class="right-main">
-                <div class="rectangle">
-                    <img class="rec-img" src="./resources/images/information-orientation.jpg" alt="people walking around">
-                    <div class="info">
-                        <div class="info-body">
+            <div class="desktop">
+                <div class="right-main">
+                    <div class="rectangle">
+                        <img class="rec-img" src="./resources/images/information-orientation.jpg" alt="people walking around">
+                        <div class="info">
+                            <div class="info-body">
+                                <h2>Orientation Date</h2>
+                                <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rectangle">
+                        <img class="rec-img" src="./resources/images/information-campus.jpg" alt="people sitting at a table">
+                        <div class="info">
+                            <h2>Our Campus</h2>
+                            <p>Find which campus is close by you</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="rectangle">
+                        <img class="guest" src="./resources/images/information-guest-lecture.jpg" alt="a happy old man">
+                        <div class="info">
+                            <h2>Our Guest Lecture</h2>
+                            <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mobile">
+                <div class="right-main">
+                    <div class="rectangle">
+                        <img class="rec-img" src="./resources/images/information-orientation-mobile.jpg" alt="people walking around">
+                        <div class="info" id="mobile">
                             <h2>Orientation Date</h2>
                             <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
                             <a href="#">Read More</a>
                         </div>
                     </div>
-                </div>
-                <div class="rectangle">
-                    <img class="rec-img" src="./resources/images/information-campus.jpg" alt="people sitting at a table">
-                    <div class="info">
-                        <h2>Our Campus</h2>
-                        <p>Find which campus is close by you</p>
-                        <a href="#">Read More</a>
+                    <div class="rectangle">
+                        <img class="rec-img" src="./resources/images/information-campus-mobile.jpg" alt="people sitting at a table">
+                        <div class="info" id="mobile">
+                            <h2>Our Campus</h2>
+                            <p>Find which campus is close by you</p>
+                            <a href="#">Read More</a>
+                        </div>
                     </div>
-                </div>
-                <div class="rectangle">
-                    <img class="guest" src="./resources/images/information-guest-lecture.jpg" alt="a happy old man">
-                    <div class="info">
-                        <h2>Our Guest Lecture</h2>
-                        <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-                        <a href="#">Read More</a>
+                    <div class="rectangle">
+                        <img class="guest" src="./resources/images/information-guest-lecture-mobile.jpg" alt="a happy old man">
+                        <div class="info" id="mobile">
+                            <h2>Our Guest Lecture</h2>
+                            <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+                            <a href="#">Read More</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
         </div>
 
-        <section>
+        <section class="disappear">
             <h1>Start Learning</h1>
             <div class="box-container">
                 <div class="box">
@@ -127,16 +175,28 @@
                 <div class="box">
                     <img class="box-img" src="./resources/images/course-marketing.jpg" alt="a smart watch">
                     <div class="box-content">
-                        <h2>Marketing</h1>
+                        <h2>Marketing</h2>
                         <p>COURSES</p>
                         <p>Analytics, Content Marketing, Mobile Marketing.</p>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="appear">
+            <h1>Start Learning</h1>
+            <div class="list">
+                <h2 class="list-item">Software Engineering</h2>
+                <h2 class="list-item">Computer Art</h2>
+                <h2 class="list-item">Design</h2>
+                <h2 class="list-item">Data</h2>
+                <h2 class="list-item">Business</h2>
+                <h2 class="list-item">Marketing</h2>
+            </div>
+        </section>
     </main>
 
-    <section>
+    <section class="vanish">
         <div>
             <h1 class="section-heading">Thesis Exhibit</h1>
         </div>
@@ -176,9 +236,16 @@
         </div>
     </section>
 
+    <section class="unvanish">
+        <h1>Thesis Exhibit</h1>
+        <video class="mob-vid" controls>
+            <source src="./resources/videos/thesis.mp4" type="video/mp4">
+        </video>
+    </section>
+
     <footer>
         <div>
-            <p>2016 Colmar Academy. All rights reserved</p>
+            <p>&copy; 2016 Colmar Academy. All rights reserved</p>
             <a class="last-words" href="#">Terms</a>
             <a class="last-words" href="#">Privacy</a>
         </div>

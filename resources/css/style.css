@@ -5,15 +5,27 @@
     color: #1a1a1a;
     background-color: #e1e2e6;
     font-size: 16px;
+    opacity: 0.98;
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 2rem;
     text-align: center;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    background-color: white;
 }
 
             /* Header */
@@ -28,6 +40,10 @@ header, header img, header h2, nav, header ul, header li, header span, header a,
 
 header {
     padding: 16px 24px 16px 24px;
+}
+
+header .desktop {
+    background-color: white;
 }
 
 header h2 {
@@ -58,6 +74,37 @@ header a {
 header li {
     margin-left: 16px;
 }
+
+header .mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+    header {
+        padding-bottom: 4rem;
+        width: 100%;
+    }
+
+    header .desktop {
+        display: none;
+    }
+    
+    header .mobile {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    header .mobile ul li {
+        padding: 1.2rem;
+    }
+
+    header .mobile ul li a img {
+        min-width: 2.2rem;
+    }
+}
+
 
             /* Banner */
 
@@ -91,6 +138,46 @@ button {
     font-size: 1.5rem;
     line-height: 2.5rem;
     margin: 2rem 0;
+}
+
+div.desktop {
+    background-color: white;
+}
+
+section.mobile {
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    section.desktop {
+        display: none;
+    }
+
+    section.mobile {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    section.mobile img {
+        max-width: 100%;
+    }
+
+    section.mobile h1 {
+        padding: 2rem 1rem;
+        font-size: 2rem;
+    }
+
+    section.mobile p {
+        margin: 0;
+        padding-bottom: 1.5rem;
+        padding-left: 1rem;
+    }
+
+    section.mobile button {
+        margin-bottom: 2rem;
+        margin-left: 0.9rem;
+        margin-right: 1rem;
+    }
 }
 
             /* Pre Main */
@@ -139,22 +226,26 @@ button {
 
 .rectangle {
     display: flex;
-    margin: 1rem;
     padding: 1rem;
+    background-color: white;
+    border: 0.01rem solid #e1e2e6;
 }
 
 .info {
     padding-left: 1rem;
     padding-top: 1.5rem;
+    background-color: white;
 }
 
 .info p {
     padding: 0.5rem 0;
+    background-color: white;
 }
 
 .info a {
     text-decoration: none;
     color: blue;
+    background-color: white;
 }
 
 .rec-img {
@@ -163,6 +254,56 @@ button {
 
 .guest {
     max-height: 10.5rem;
+}
+
+.info-body {
+    background-color: white;
+}
+
+div.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .left-main {
+        display: none;
+    }
+
+    div.desktop {
+        display: none;
+    }
+
+    div.mobile {
+        display: block;
+    }
+
+    div.mobile .rectangle {
+        display: block;
+        background-color: white;
+    }
+
+    div.mobile .rec-img {
+        max-width: 100%;
+    }
+
+    div.mobile .guest {
+        max-width: 100%;
+    }
+
+    div.mobile .right-main {
+        padding: 0;
+        text-align: center;
+    }
+
+    div.mobile .right-main .rectangle {
+        margin: 0;
+        padding: 2rem;
+        width: 85%;
+    }
+
+    #mobile, #mobile h2, #mobile p, #mobile a {
+        background-color: white;
+    }
 }
 
             /* Boxes Section */
@@ -182,9 +323,9 @@ section h1 {
 
 .box {
     background-color: white;
-    max-width: 20rem;
-    text-align: center;
-    margin: 2rem;
+    max-width: 23.3rem;
+    text-align: left;
+    margin: 1rem;
 }
 
 .box-content {
@@ -201,10 +342,41 @@ section h1 {
 }
 
 .box-img {
-    max-width: 20rem;
+    max-width: 100%;
     background-color: white;
-    text-align: center;
 }
+
+.appear {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .disappear {
+        display: none;
+    }
+
+    .appear {
+        display: block;
+        background-color: white;
+    }
+
+    .appear h1 {
+        padding-bottom: 2.5rem;
+    }
+
+    .list {
+        background-color: white;
+        padding: 1rem;
+    }
+
+    .list-item {
+        padding: 1rem 0 1.5rem 1rem;
+        margin: 0.5rem 0;
+        font-size: 1.8rem;
+    }
+}
+
+
 
             /* Video Section */
 
@@ -239,9 +411,11 @@ section h1 {
 }
 
 .next-line {
-    border-bottom: 1rem solid white;
     border-right: 1rem solid white;
     padding: 1rem;
+    background-color: white;
+    padding-right: 1rem;
+    border: 0.01rem solid #e1e2e6;
 }
 
 .next-up {
@@ -250,19 +424,23 @@ section h1 {
 
 .next-content {
     display: flex;
+    background-color: white;
 }
 
 .next-img {
     max-height: 10rem;
     padding-right: 1rem;
+    background-color: white;
 }
 
 .next-text {
     padding-top: 2rem;
+    background-color: white;
 }
 
 .next-text p {
     padding-top: 1rem;
+    background-color: white;
 }
 
 .vid-content p {
@@ -275,6 +453,31 @@ section h1 {
 .vid-content h2 {
     text-align: left;
     padding-left: 1em;
+}
+
+.unvanish {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .vanish {
+        display: none;
+    }
+
+    .unvanish {
+        display: block;
+        border: 0.1rem solid #e1e2e6;
+    }
+
+    .unvanish h1 {
+        background-color: white;
+        padding-bottom: 1.5rem;
+    }
+
+    .mob-vid {
+        max-width: 100%;
+        background-color: white;
+    }
 }
 
             /* Footer */
@@ -300,4 +503,10 @@ footer p {
 footer div {
     padding: 2rem;
     background-color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .last-words {
+        display: none;
+    }
 }
