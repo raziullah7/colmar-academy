@@ -229,6 +229,11 @@ section.mobile {
     padding-top: 1rem;
 }
 
+.rectangle:hover, .rectangle:hover .info, .rectangle:hover .info h2, .rectangle:hover .info p, .rectangle:hover .info a {
+    background-color: #e1e2e6;
+    transition: background-color 0.4s ease-out 0.1s;
+}
+
 .rectangle {
     display: flex;
     padding: 1rem;
@@ -421,6 +426,11 @@ section h1 {
     background-color: white;
     padding-right: 1rem;
     border: 0.01rem solid #e1e2e6;
+}
+
+.next-line:hover, .next-line:hover .next-content, .next-line:hover .next-content .next-img, .next-line:hover .next-content .next-text, .next-line:hover .next-content .next-text h2, .next-line:hover .next-content .next-text p {
+    background-color: #e1e2e6;
+    transition: background-color 0.4s ease-out 0.1s;
 }
 
 .next-up {
