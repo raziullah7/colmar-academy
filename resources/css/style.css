@@ -31,7 +31,7 @@ h2 {
             /* Header */
 
 header img, header h2, nav, header ul, header li {
-    display: inline;
+    display: inline-block;
 }
 
 header, header img, header h2, nav, header ul, header li, header span, header a, .logo {
@@ -82,7 +82,7 @@ header .mobile {
 @media only screen and (max-width: 768px) {
 
     header {
-        padding-bottom: 4rem;
+        /* padding-bottom: 4rem; */
         /* width: 100%; */
     }
 
@@ -92,7 +92,7 @@ header .mobile {
     
     header .mobile {
         display: block;
-        width: 100%;
+        float: none;
         text-align: center;
     }
 
@@ -101,12 +101,12 @@ header .mobile {
     }
 
     header .mobile ul li {
-        padding: 1.2rem;
+        padding: 0 1rem;
     }
 
     header .mobile ul li a img {
         min-width: 2.2rem;
-        margin: 0 1.5rem;
+        margin: 0 15%;
     }
 }
 
@@ -231,7 +231,7 @@ section.mobile {
 
 .rectangle:hover, .rectangle:hover .info, .rectangle:hover .info h2, .rectangle:hover .info p, .rectangle:hover .info a {
     background-color: #e1e2e6;
-    transition: background-color 0.4s ease-out 0.1s;
+    transition: background-color 0.4s ease-out;
 }
 
 .rectangle {
@@ -279,6 +279,10 @@ div.mobile {
         display: none;
     }
 
+    .practice {
+        display: block;
+    }
+
     div.desktop {
         display: none;
     }
@@ -306,9 +310,7 @@ div.mobile {
     }
 
     div.mobile .right-main .rectangle {
-        margin: 0;
         padding: 2rem;
-        width: 85%;
     }
 
     #mobile, #mobile h2, #mobile p, #mobile a {
@@ -383,6 +385,7 @@ section h1 {
         padding: 1rem 0 1.5rem 1rem;
         margin: 0.5rem 0;
         font-size: 1.8rem;
+        background-color: #e1e2e6;
     }
 }
 
@@ -430,7 +433,7 @@ section h1 {
 
 .next-line:hover, .next-line:hover .next-content, .next-line:hover .next-content .next-img, .next-line:hover .next-content .next-text, .next-line:hover .next-content .next-text h2, .next-line:hover .next-content .next-text p {
     background-color: #e1e2e6;
-    transition: background-color 0.4s ease-out 0.1s;
+    transition: background-color 0.4s ease-out;
 }
 
 .next-up {
@@ -481,7 +484,8 @@ section h1 {
 
     .unvanish {
         display: block;
-        border: 0.1rem solid #e1e2e6;
+        background-color: white;
+        border: 0.01rem solid #e1e2e6;
     }
 
     .unvanish h1 {
@@ -492,6 +496,7 @@ section h1 {
     .mob-vid {
         max-width: 100%;
         background-color: white;
+        padding-bottom: 1.5rem;
     }
 }
 
